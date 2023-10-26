@@ -192,6 +192,7 @@
     // ButtonBがクリックされた時の処理
     function btnBClick(e){
         active=false;
+         $("#time").html("生還");
         
         
     }
@@ -202,7 +203,7 @@
         active=false;
         period=60*parseInt($("#minute").val())+parseInt($("#second").val());
         
-        $("#remain").html("残り時間:"+period);
+        $("#remain").html("タイムリミットまで:"+period);
         
     }
     
